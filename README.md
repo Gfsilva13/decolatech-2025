@@ -7,6 +7,7 @@ Java RESTFul API criada para DecolaTech 2025
 classDiagram
     class Client {
         +String name
+        +String manager
         +Account account
         +List~Feature~ features
         +Card card
@@ -16,9 +17,8 @@ classDiagram
     class Account {
         +String number
         +String agency
-        +String balance
-        +String limit
-        +String manager
+        +BigDecimal balance
+        +BigDecimal limit
     }
 
     class Feature {
@@ -28,7 +28,7 @@ classDiagram
 
     class Card {
         +String number
-        +String limit
+        +BigDecimal limit
     }
 
     class News {
