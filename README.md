@@ -5,7 +5,7 @@ Java RESTFul API criada para DecolaTech 2025
 
 ```mermaid
 classDiagram
-    class Correntista {
+    class Client {
         +String name
         +Acount acount
         +List~Feature~ features
@@ -36,8 +36,8 @@ classDiagram
         +String description
     }
 
-    Correntista "1"* -- "1" Acount
-    Correntista "1"* -- "n" Feature
-    Correntista "1"* -- "1" Card 
-    Correntista "1"* -- "n" News 
+    Client "1"* -- "1" Acount
+    Client "1"* -- "n" Feature
+    Client "1"* -- "1" Card 
+    Client "1"* -- "n" News 
 ```
