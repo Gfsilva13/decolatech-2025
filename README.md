@@ -1,7 +1,7 @@
 # DecolaTech 2025
 Java RESTFul API criada para DecolaTech 2025
 
-## Diagrama de Classe
+## Diagrama de Classes
 
 ```mermaid
 classDiagram
