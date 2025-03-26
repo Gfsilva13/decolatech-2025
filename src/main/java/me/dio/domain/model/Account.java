@@ -16,10 +16,10 @@ public class Account {
 
     private String agency;
 
-    @Column(precision = 2)
+    @Column(scale = 13, precision = 2)
     private BigDecimal balance;
 
-    @Column(name ="additional_limit", precision = 2)
+    @Column(name ="additional_limit", scale = 13, precision = 2)
     private BigDecimal limit;
 
     //Métodos para manipulação de dados
