@@ -9,6 +9,7 @@ import java.net.URL;
 
 @OpenAPIDefinition (servers = {@Server(url = "/", description = "Defaul Server URL")})
 @SpringBootApplication
+
 public class Application {
 
 	public static void main(String[] args) {
