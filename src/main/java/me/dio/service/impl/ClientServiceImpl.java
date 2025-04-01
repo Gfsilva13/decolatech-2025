@@ -24,7 +24,7 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public Client create(Client clientToCreate) {
         if (clientRepository.existsByAccountNumber(clientToCreate.getAccount().getNumber())){
-            throw new IllegalArgumentException("Número de Conta já está sendo usado.");
+            throw new IllegalArgumentException("This Account Number already exists.");
         }
         return clientRepository.save(clientToCreate);
     }

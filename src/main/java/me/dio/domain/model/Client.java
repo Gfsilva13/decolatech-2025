@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.util.List;
 
-@Entity(name = "tb_User")
+@Entity(name = "tb_Client")
 public class Client {
 
     @Id
@@ -21,10 +21,10 @@ public class Client {
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;
 
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.PERSIST,  fetch = FetchType.EAGER)
     private List<Feature> feature;
 
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
     private List<News> news;
 
     // Métodos de manipulação de dados
